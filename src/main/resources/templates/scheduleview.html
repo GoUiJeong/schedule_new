@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>상세페이지</title>
+</head>
+<body>
+  <h1 th:text="${article.title}">제목입니다</h1>
+  <P th:text="${article.content}"> 내용이 들어갈 부분 </P>
+<a th:href="@{/schedule/delete(id=${schedule.id})}"> 글 삭제하기 </a>
+</body>
+</html>
+
